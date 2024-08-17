@@ -104,15 +104,16 @@ h3 {
 .home-left button {
   margin-top: 15px;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 6px;
+  font-size: 18px;
+  padding: 5px;
   background: #2a2d34;
   outline: 3px solid #2a2d34;
   border: 3px solid #aaa7a7;
   box-shadow: 0 8px 0 #f26430;
   transition: 0.1s;
   border-radius: 10px;
+  font-family: "Concert One", sans-serif;
+
 }
 
 .home-left button:hover {
@@ -211,6 +212,66 @@ h3 {
 .skills h3 {
   margin-bottom: 4rem;
   text-align: center;
+}
+
+#portfolio {
+  padding: 5rem 0;
+}
+
+.portfolio h3 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.grid-portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+}
+
+.item-menu-portfolio {
+  background: rgba(6, 6, 6, 0.25);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.item-menu-portfolio img {
+  width: 100%;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.item-menu-portfolio p {
+  padding-bottom: 10px;
+}
+
+.item-menu-portfolio button {
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 3px;
+  background: #2a2d34;
+  outline: 3px solid #2a2d34;
+  border: 3px solid #aaa7a7;
+  box-shadow: 0 8px 0 #f26430;
+  transition: 0.1s;
+  border-radius: 10px;
+  z-index: 1;
+  font-family: "Concert One", sans-serif;
+}
+
+.item-menu-portfolio button:hover {
+  background: #232529;
+}
+
+.item-menu-portfolio button:active {
+  box-shadow: 0 5px 0 #c74312;
+  transform: translateY(4px);
 }
 
 #education {
@@ -364,8 +425,7 @@ h3 {
 .btn-submit {
   margin-top: 5px;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 18px;
   padding: 6px;
   background: #2a2d34;
   outline: 3px solid #2a2d34;
@@ -375,6 +435,7 @@ h3 {
   border-radius: 10px;
   width: 100%;
   z-index: 1;
+  font-family: "Concert One", sans-serif;
 }
 
 .btn-submit:hover {
@@ -602,6 +663,10 @@ footer {
 
   .text-box small {
     font-size: 13px;
+  }
+
+  .item-menu-portfolio button {
+    font-size: 14px;
   }
 
   #contact {
