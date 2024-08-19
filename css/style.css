@@ -239,6 +239,31 @@ h3 {
   text-align: center;
 }
 
+.item-menu-img {
+  position: relative;
+}
+
+.item-menu-img:hover::after {
+  content: '';
+  width: 100%;
+  height: 93%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px 10px 0 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #d7d4d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+#portfolio-1:hover::after {
+  content: 'Syamsi Foods Landing Page';
+}
+
 .item-menu-portfolio img {
   width: 100%;
   padding-bottom: 10px;
