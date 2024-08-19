@@ -712,6 +712,10 @@ footer {
     font-size: 14px;
   }
 
+  .item-menu-img:hover::after {
+    font-size: 18px;
+  }
+
   #contact {
     padding: 2rem 0;
   }
