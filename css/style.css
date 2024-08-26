@@ -125,6 +125,95 @@ h3 {
   transform: translateY(4px);
 }
 
+.waving-hand {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: waves 2s infinite;
+}
+
+@keyframes waves {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.writer {
+  font-size: 25px;
+  border-right: 2px solid;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 18ch;
+  animation: typing 4s steps(18) infinite, blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+
+  50% {
+    width: 18ch;
+  }
+
+  100% {
+    width: 0ch;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #aaa7a7;
+  }
+}
+
+@keyframes text {
+  0%, 50% {
+    content: 'Welcome To My Site!';
+  }
+
+  50.1%, 100% {
+    content: 'Have A Great Day!';
+  }
+}
+
+.text::after {
+  content: '';
+  animation: text 8s infinite;
+}
+
 .home-right {
   display: flex;
   justify-content: center;
@@ -673,6 +762,30 @@ footer {
 
   .home-right {
     order: -1;
+  }
+
+  .writer {
+    width: 15ch;
+    animation: typing 4s steps(15) infinite, blink 0.8s step-end infinite;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0ch;
+    }
+
+    50% {
+      width: 15ch;
+    }
+
+    100% {
+      width: 0ch;
+    }
+  }
+
+  .text {
+    text-align: left;
+    font-size: 20px;
   }
 
   .home-left {
