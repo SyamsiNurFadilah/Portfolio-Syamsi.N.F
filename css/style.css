@@ -125,6 +125,33 @@ h3 {
   transform: translateY(4px);
 }
 
+.blob {
+  width: 300px;
+  height: 300px;
+  border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+  overflow: hidden;
+  animation: flow 3s infinite ease-in-out;
+  background: #f26430;
+}
+
+@keyframes flow {
+  0% {
+    border-radius: 60% 40% 60% 40% / 60% 40% 60% 40%;
+  }
+
+  35% {
+    border-radius: 80% 70% 60% 60% / 80% 70% 60% 60%;
+  }
+
+  70% {
+    border-radius: 70% 90% 60% 70% / 80% 90% 50% 90%;
+  }
+
+  100% {
+    border-radius: 60% 40% 60% 40% / 60% 40% 60% 40%;
+  }
+}
+
 .waving-hand {
   display: inline-block;
   transform-origin: 70% 70%;
@@ -326,6 +353,7 @@ h3 {
   padding: 20px;
   max-width: 400px;
   text-align: center;
+  overflow: hidden;
 }
 
 .item-menu-img {
@@ -764,6 +792,29 @@ footer {
     order: -1;
   }
 
+  .blob {
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+  }
+
+  .home-left {
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+
+  .home-left h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-left p {
+    font-size: 15px;
+  }
+
+  .home-left button {
+    font-size: 12px;
+  }
+
   .writer {
     width: 15ch;
     animation: typing 4s steps(15) infinite, blink 0.8s step-end infinite;
@@ -784,25 +835,7 @@ footer {
   }
 
   .text {
-    text-align: left;
     font-size: 20px;
-  }
-
-  .home-left {
-    text-align: center;
-    padding-bottom: 5rem;
-  }
-
-  .home-left h1 {
-    font-size: 2.3rem;
-  }
-
-  .home-left p {
-    font-size: 15px;
-  }
-
-  .home-left button {
-    font-size: 12px;
   }
 
   .about-center p {
