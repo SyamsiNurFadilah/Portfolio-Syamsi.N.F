@@ -129,6 +129,7 @@ h3 {
   width: 300px;
   height: 300px;
   border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   overflow: hidden;
   animation: flow 3s infinite ease-in-out;
   background: #f26430;
