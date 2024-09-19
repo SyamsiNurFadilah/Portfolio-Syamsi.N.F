@@ -15,6 +15,10 @@ body {
   background: #2a2d34;
 }
 
+header {
+  height: 100vh;
+}
+
 .wrapper {
   width: 1024px;
   margin: 0 auto;
