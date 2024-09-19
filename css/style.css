@@ -692,7 +692,7 @@ footer {
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   p {
@@ -868,6 +868,10 @@ footer {
     font-size: 15px;
   }
 
+  .item-menu p {
+    font-size: 16px;
+  }
+
   .item-menu-portfolio button {
     font-size: 16px;
   }
@@ -882,6 +886,10 @@ footer {
 
   #contact {
     padding: 2rem 0;
+  }
+
+  .contact-detail p {
+    font-size: 16px;
   }
 
   .form input,
