@@ -288,6 +288,7 @@ h3 {
 .about-center p {
   font-size: 20px;
   text-align: justify;
+  text-indent: 3em;
 }
 
 #skills {
@@ -652,6 +653,7 @@ footer {
 
 #btn-to-top {
   animation: 2s upDown infinite;
+  font-size: 2em;
 }
 
 @keyframes upDown {
@@ -800,9 +802,9 @@ footer {
   }
 
   .blob {
-    width: 230px;
-    height: 230px;
-    margin: 10px;
+    width: 250px;
+    height: 250px;
+    margin: 5em 0 3em 0;
   }
 
   .home-left {
