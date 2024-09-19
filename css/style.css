@@ -15,10 +15,6 @@ body {
   background: #2a2d34;
 }
 
-header {
-  height: 100vh;
-}
-
 .wrapper {
   width: 1024px;
   margin: 0 auto;
@@ -87,7 +83,7 @@ nav ul li a::after {
 #home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 500px;
+  height: 100vh;
   align-items: center;
 }
 
