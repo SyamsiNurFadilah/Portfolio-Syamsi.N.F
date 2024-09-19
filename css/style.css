@@ -342,8 +342,10 @@ h3 {
 
 .grid-portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   place-items: center;
+  gap: 30px;
+
 }
 
 .item-menu-portfolio {
@@ -380,6 +382,10 @@ h3 {
 
 #portfolio-1:hover::after {
   content: 'Syamsi Foods Landing Page';
+}
+
+#portfolio-2:hover::after {
+  content: 'Summit Journey';
 }
 
 .item-menu-portfolio img {
