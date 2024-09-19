@@ -73,11 +73,11 @@ nav ul li a::after {
 .hamburger-menu {
   position: fixed;
   top: 8px;
-  right: 15px;
+  right: 18px;
   z-index: 999;
   display: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #home {
@@ -653,7 +653,7 @@ footer {
 
 #btn-to-top {
   animation: 2s upDown infinite;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 @keyframes upDown {
@@ -688,15 +688,15 @@ footer {
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   h4 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   p {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .hamburger-menu {
@@ -789,7 +789,7 @@ footer {
   }
 
   .logo p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   #home {
@@ -813,15 +813,15 @@ footer {
   }
 
   .home-left h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
 
   .home-left p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .home-left button {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .writer {
@@ -848,7 +848,8 @@ footer {
   }
 
   .about-center p {
-    font-size: 15px;
+    font-size: 18px;
+    text-align: justify;
   }
 
   .grid-2 img {
@@ -856,32 +857,47 @@ footer {
   }
 
   .container p {
-    font-size: 15px;
+    font-size: 18px;
+  }
+
+  .text-box h2 {
+    font-size: 18px;
   }
 
   .text-box small {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .item-menu-portfolio button {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .item-menu-img:hover::after {
     font-size: 18px;
   }
 
+  #btn-to-top {
+    font-size: 2.8em;
+  }
+
   #contact {
     padding: 2rem 0;
   }
 
+  .form input,
+  .form textarea {
+    font-size: 14px;
+  }
+
   .contact-icon {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .btn-submit {
-    font-size: 12px;
+    font-size: 16px;
   }
 
-
+  .nav-footer ul li a {
+    font-size: 14px;
+  }
 }
