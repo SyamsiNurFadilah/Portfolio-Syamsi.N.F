@@ -381,10 +381,6 @@ h3 {
   font-size: 23px;
 }
 
-#portfolio-1:hover::after {
-  content: 'Syamsi Foods Landing Page';
-}
-
 #portfolio-2:hover::after {
   content: 'Summit Journey';
 }
