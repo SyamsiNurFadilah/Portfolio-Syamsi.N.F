@@ -34,3 +34,26 @@ window.addEventListener("scroll", () => {
 });
 
 let cvModel = document.getElementById("homeModel");
+
+let modal = document.querySelector(".portfolio-preview");
+let box = modal.querySelectorAll(".preview");
+
+document.querySelectorAll("#info").forEach((portfolio) => {
+  portfolio.onclick = () => {
+    modal.style.display = "flex";
+    let name = portfolio.getAttribute("data-name");
+    box.forEach((preview) => {
+      let target = preview.getAttribute("data-target");
+      if (name == target) {
+        preview.classList.add("active");
+      }
+    });
+  };
+});
+
+box.forEach((portfolio) => {
+  portfolio.querySelector(".fa-x").onclick = () => {
+    portfolio.classList.remove("active");
+    modal.style.display = "none";
+  };
+});
