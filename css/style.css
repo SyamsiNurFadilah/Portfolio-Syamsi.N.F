@@ -423,6 +423,11 @@ h3 {
   display: inline-block;
 }
 
+.preview img {
+  width: 100%;
+  padding: 1em 0;
+}
+
 .fa-x {
   cursor: pointer;
   position: absolute;
