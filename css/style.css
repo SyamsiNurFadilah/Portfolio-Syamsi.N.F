@@ -92,7 +92,7 @@ h3 {
 }
 
 .home-left h1 {
-  font-size: 40px;
+  font-size: 37px;
 }
 
 .home-left p {
@@ -823,9 +823,9 @@ footer {
   }
 
   .blob {
-    width: 250px;
-    height: 250px;
-    margin: 5em 0 3em 0;
+    width: 260px;
+    height: 260px;
+    margin: 5em 0 4em 0;
   }
 
   .home-left {
