@@ -35,25 +35,38 @@ window.addEventListener("scroll", () => {
 
 let cvModel = document.getElementById("homeModel");
 
-let modal = document.querySelector(".portfolio-preview");
-let box = modal.querySelectorAll(".preview");
+function setupModal(buttonSelector, modalSelector, previewSelector) {
+  let modal = document.querySelector(modalSelector);
+  let box = modal.querySelectorAll(previewSelector);
 
-document.querySelectorAll("#info").forEach((portfolio) => {
-  portfolio.onclick = () => {
-    modal.style.display = "flex";
-    let name = portfolio.getAttribute("data-name");
-    box.forEach((preview) => {
-      let target = preview.getAttribute("data-target");
-      if (name == target) {
-        preview.classList.add("active");
-      }
+  document.querySelectorAll(buttonSelector).forEach((btn) => {
+    btn.onclick = () => {
+      modal.style.display = "flex";
+      let name = btn.getAttribute("data-name");
+      box.forEach((preview) => {
+        let target = preview.getAttribute("data-target");
+        if (name == target) {
+          preview.classList.add("active");
+        }
+      });
+    };
+  });
+}
+
+setupModal("#info-1", ".portfolio-preview", ".preview");
+setupModal("#info-2", ".portfolio-preview2", ".preview2");
+
+const closeButtons = document.querySelectorAll(".fa-x");
+
+closeButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const preview = btn.closest(".preview, .preview2");
+    if (preview) {
+      preview.classList.remove("active");
+    }
+
+    document.querySelectorAll(".portfolio-preview, .portfolio-preview2").forEach((m) => {
+      m.style.display = "none";
     });
-  };
-});
-
-box.forEach((portfolio) => {
-  portfolio.querySelector(".fa-x").onclick = () => {
-    portfolio.classList.remove("active");
-    modal.style.display = "none";
-  };
+  });
 });
